@@ -13,7 +13,9 @@ export default {
 				'almond': '#E7D4C4'
 			},
 			fontFamily: {
-				'brand': ['Quicksand Variable', ...defaultTheme.fontFamily.sans]
+				'brand': ['Quicksand', ...defaultTheme.fontFamily.sans],
+				'serif': ['Lora', ...defaultTheme.fontFamily.serif],
+				'testimony': ['Playfair Display', ...defaultTheme.fontFamily.serif],
 			},
 			screens: {
 				// TODO: Switch to em
