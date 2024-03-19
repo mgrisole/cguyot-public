@@ -1,0 +1,29 @@
+---
+import { Image } from "astro:assets";
+import type {ImageMetadata} from "astro";
+
+interface Props {
+  title: string;
+  img: {url: ImageMetadata, alt: string, loading?: "eager" | "lazy"};
+  darkColor?: boolean;
+  reverse?: boolean;
+}
+
+const { title, img, darkColor = false, reverse = false } = Astro.props;
+---
+
+<div
+  class={`flex flex-col gap-16 items-center sm:flex-row ${reverse ? "sm:flex-row" : "sm:flex-row-reverse"}`}
+>
+  <div class="flex-1">
+    <Image src={img.url} alt={img.alt} loading={img.loading || "lazy"}/>
+  </div>
+  <div class="flex flex-col flex-1">
+    <div class="font-serif text-2xl mb-6 md:text-xl lg:text-2xl">{title}</div>
+    <div
+      class={`h-[1px] w-1/2 mb-9 ${darkColor ? "bg-independence" : "bg-baby-powder"}`}
+    >
+    </div>
+    <slot />
+  </div>
+</div>

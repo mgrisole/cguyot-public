@@ -6,6 +6,7 @@ export default {
 	theme: {
 		extend: {
 			colors: {
+				'neutral': '#F0EFF4',
 				'baby-powder': '#f8f7f2',
 				'old-rose': '#c2747d',
 				'independence': '#3d405b',

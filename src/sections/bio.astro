@@ -1,0 +1,24 @@
+---
+import Chapter from "../components/chapter.astro";
+import List from "../components/list.astro";
+import boardwalkImage from "../assets/photo/square/boardwalk.jpeg";
+---
+
+<Chapter
+  title="Trouver ce declic qui va tout changer"
+  img={{url: boardwalkImage, alt: 'Escaliers en bois menant à une plage ensoleillée.', loading: "eager"}}
+  darkColor={true}
+>
+  <div> Je m’appelle Caroline Guyot, je suis coach et praticienne certifiée en hypnose ericksonienne et je vous souhaite la bienvenue sur ce site.</div>
+  <div class={"mb-3"}>
+    J’accompagne de nombreuses demandes allant de l’arrêt du tabac à la gestion de l’anxiété, du stress en passant par l’amélioration du sommeil, les problèmes de peau, les peurs et phobies, les acouphènes…
+    J’ai développé, pendant ces 6 années d’accompagnement, deux domaines d’expertise pour lesquels je suis particulièrement sollicitée:
+  </div>
+  <List
+    items={[
+      "La gestion du poids et des troubles du comportement alimentaire (anneau gastrique virtuel) ou comment retrouver votre poids bien-être et vous y maintenir durablement (sans régime)",
+      "L’optimisation des performances professionnelles (sportives/artistiques/managériales) ou comment lever les freins/obstacles à l’atteinte de vos objectifs et donner le meilleur de vous-même à chaque échéance importante de votre vie professionnelle"
+    ]}
+    darkFont={true}
+  />
+</Chapter>
