@@ -1,14 +1,15 @@
 ---
 import Chapter from "../components/chapter.astro";
 import List from "../components/list.astro";
-import boardwalkImage from "../assets/photo/square/boardwalk.jpeg";
+import boardwalk from "../assets/photo/square/boardwalk.jpeg";
 ---
 
 <Chapter
-  title="Trouver ce declic qui va tout changer"
-  img={{url: boardwalkImage, alt: 'Escaliers en bois menant à une plage ensoleillée.', loading: "eager"}}
+  img={{url: boardwalk, alt: 'Escaliers en bois menant à une plage ensoleillée.', loading: "eager"}}
   darkColor={true}
+  reverse={true}
 >
+  <Fragment slot="title">Trouver ce declic qui va tout changer</Fragment>
   <div> Je m’appelle Caroline Guyot, je suis coach et praticienne certifiée en hypnose ericksonienne et je vous souhaite la bienvenue sur ce site.</div>
   <div class={"mb-3"}>
     J’accompagne de nombreuses demandes allant de l’arrêt du tabac à la gestion de l’anxiété, du stress en passant par l’amélioration du sommeil, les problèmes de peau, les peurs et phobies, les acouphènes…

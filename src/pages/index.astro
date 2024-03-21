@@ -1,10 +1,26 @@
 ---
 import Layout from "../layouts/layout.astro";
 import Bio from "../sections/bio.astro";
+import Change from "../sections/change.astro";
+import Process from "../sections/process.astro";
+import Hypnosis from "../sections/hypnosis.astro";
+import WeightManagement from "../sections/weightManagement.astro";
+import ProfessionalPerformance from "../sections/professionalPerformance.astro";
+import TabaccoFree from "../sections/tabaccoFree.astro";
+import Schooling from "../sections/schooling.astro";
+import Testimonies from "../sections/testimonies.astro";
 ---
 
 <Layout title="Caroline Guyot - Coaching & Hypnose">
-    <div>
+    <div class="flex flex-col gap-32 md:gap-40">
         <Bio />
+        <Change />
+        <Process />
+        <Hypnosis />
+        <WeightManagement />
+        <ProfessionalPerformance />
+        <TabaccoFree />
+        <Schooling />
+        <Testimonies />
     </div>
 </Layout>

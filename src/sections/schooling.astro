@@ -1,0 +1,27 @@
+---
+import Chapter from "../components/chapter.astro";
+import List from "../components/list.astro";
+import student from '../assets/photo/square/student.jpeg'
+---
+
+<Chapter
+  img={{url: student, alt: "Une personne concentrée engagée dans l'écriture ou l'étude, avec un stylo à la main sur un cahier ouvert sur un bureau en bois."}}
+  darkColor={true}
+  reverse={true}
+>
+  <Fragment slot="title">Cap sur la réussite et le bien être des étudiants</Fragment>
+  <div class={"flex flex-col gap-5"}>
+    <div class={"italic"}>Quelques exemples d'accompagnements:</div>
+    <List
+      darkFont={true}
+      items={[
+        "Aide au renforcement de la concentration, de la mémorisation",
+        "Gestion du stress ou de la peur d’échouer (permis de conduire, concours, examens, prise de parole en public lors d’un oral..)",
+        "Addictions (tabac, cannabis, jeux vidéos, écrans, réseaux sociaux…)",
+        "Gestion du poids et des comportements alimentaires",
+        "Choix d’une filière d’étude, d’une orientation professionnelle",
+        "Gestion des troubles du sommeil, de l’anxiété",
+        "Booster la confiance en soi"
+      ]}/>
+  </div>
+</Chapter>

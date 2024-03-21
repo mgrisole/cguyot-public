@@ -1,0 +1,41 @@
+---
+import Chapter from "../components/chapter.astro";
+import List from "../components/list.astro";
+import stretching from '../assets/photo/square/stretching.jpeg'
+---
+
+<Chapter
+  img={{url: stretching, alt: 'Une femme étirant ses bras au-dessus de sa tête lors d\'une séance d\'entraînement en plein air au crépuscule.'}}
+  darkColor={true}
+>
+  <Fragment slot="title">Cap sur la gestion du poids et la régulation des compulsions alimentaires
+    grâce au programme: Hypno-Coaching « Mincir durablement par une reprogrammation en profondeur »</Fragment>
+  <div class={"flex flex-col gap-3"}>
+    <div class={"italic"}>
+      «&nbsp;J’ai tout essayé&nbsp;» , «&nbsp;c’est plus fort que moi&nbsp;»
+    </div>
+    <div>
+      Vous êtes fatigué.e des régimes qui affectent profondément votre moral et votre image de vous?
+      Vous avez déjà perdu du poids et avez tout repris, voire plus et vous ne comprenez pas pourquoi ?
+      Vous en avez assez de l’effet yoyo et de contrôler votre alimentation au point d’y penser une bonne partie de la journée ?
+    </div>
+
+    <div class={"font-serif italic"}>
+      <div>Et si les régimes restrictifs étaient en fait une partie du problème et non une solution ?</div>
+      <div>Et si la clé de l’amincissement durable que vous recherchez depuis toutes ces années était ailleurs que dans l’assiette… ?</div>
+    </div>
+
+    <div>
+      Je vous propose un parcours individuel sur mesure et riche en contenu et explorations afin de vous permettre d’atteindre votre objectif de mincir et rester mince par :
+      <div class={"mt-3"}>
+        <List darkFont={true} items={[
+          "L’accès à une meilleure compréhension de vos anciennes routines alimentaires",
+          "L’expérimentation de nouveaux modes de fonctionnement quotidiens à effets concrets",
+          "La redécouverte vos de sensations alimentaires (faim, satiété, rassasiement)",
+          "La régulation de vos « faims émotionnelles » et la capacité de gérer la sensation de « vide intérieur »",
+          "La restauration de l’estime et de la confiance en soi"
+        ]} />
+      </div>
+    </div>
+  </div>
+</Chapter>

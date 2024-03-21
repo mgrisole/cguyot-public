@@ -1,0 +1,48 @@
+---
+import Chapter from "../components/chapter.astro";
+import List from "../components/list.astro";
+import travel from "../assets/photo/square/travel.jpeg";
+import {MoreInfo} from "../components/moreInfo.tsx";
+---
+
+<Chapter
+  img={{url: travel, alt: 'Essentiels de voyage à plat: journal, appareil photo, lunettes de soleil et souvenirs imprimés.'}}
+  darkColor={true}
+>
+  <Fragment slot="title">L'hypnose en quelques mots simples</Fragment>
+  <div class={"mb-6"}>
+    L’hypnose est un état naturel qui permet d’ouvrir de nouvelles portes vers le changement par une meilleure compréhension de ses propres modes de fonctionnement
+  </div>
+  <div class={"mb-6"}>
+    Entrer en hypnose, c’est un peu comme partir en voyage:
+  </div>
+  <List darkFont={true} items={[
+    "Quitter sa zone habituelle pour explorer, découvrir, rencontrer…en confiance car vous êtes accompagné.e par un guide",
+    "Accéder et explorer à votre rythme cette partie de vous-même qui a créé ces comportements, ces réactions, ces blocages, ces croyances.. et mieux comprendre comment tout cela s’est construit, à quoi cela a pu servir à un moment donné.",
+    "Tester de nouveaux comportements, de nouvelles façons de réagir, de communiquer et construire son changement en le visualisant ou en le ressentant",
+    "Revenir de ce voyage enrichi.e d’expériences, de prises de conscience, d’images, de découvertes, de déclics et de nouveaux angles de vue puis ressentir au fil des jours qui suivent comment le changement peut enfin prendre place.",
+  ]} />
+
+  <MoreInfo client:visible>
+    <div class={"italic"}>Questions fréquentes à propos de l'hypnose</div>
+    <div class={"mt-4" }>
+      <div class={"italic mb-3 font-bold"}>Serai-je receptif(ve) ?</div>
+      <div class={"pl-4"}>
+        Nous pouvons tous entrer en hypnose car c’est un état naturel. Il suffit d’être bien accompagné.e et ma mission sera de vous guider pas à pas
+        Les personnes qui ont peur d’entrer en hypnose sont souvent des personnes qui ont peur de perdre le contrôle.
+        Les gens qui ressentent qu’ils n’entrent pas en hypnose sont donc des personnes qui n’ont peut-être pas rencontré le praticien à même de trouver la porte d’entrée qui LEUR convient. Il y en a des centaines et nous prendrons le temps ensemble de trouver la vôtre !
+      </div>
+    </div>
+    <div class={"mt-4" }>
+      <div class={"italic mb-3 font-bold"}>Combien de séances seront nécessaire pour installer mon changement ?</div>
+      <div class={"pl-4"}>
+        Il est impossible de répondre à cette question
+        En effet, à ce stade, je ne sais pas où vous en êtes, qui vous êtes et ce qui se joue chez vous en ce moment
+        Peut-être changerez-vous en une séance car les conditions en vous sont réunies ?
+        Peut-être aurez-vous besoin de renforcer une motivation, développer une ressource nécessaire au changement, libérer des émotions ?
+        Peut-être aurez-vous besoin de temps pour apprendre d’abord à entrer en hypnose?
+        Il y a souvent beaucoup d’autres questions. : j’y répondrai toujours
+      </div>
+    </div>
+  </MoreInfo>
+</Chapter>

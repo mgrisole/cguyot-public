@@ -1,11 +1,10 @@
 import { defineConfig } from 'astro/config';
-import icon from "astro-icon";
-
 import tailwind from "@astrojs/tailwind";
+import solidJs from "@astrojs/solid-js";
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://mgrisole.github.io/',
   base: '/cguyot-public',
-  integrations: [icon(), tailwind()]
+  integrations: [tailwind(), solidJs()]
 });

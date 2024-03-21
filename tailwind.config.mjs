@@ -2,7 +2,7 @@ import defaultTheme from 'tailwindcss/defaultTheme'
 
 /** @type {import('tailwindcss').Config} */
 export default {
-	content: ['./src/**/*.astro'],
+	content: ['./src/**/*.{astro,tsx}'],
 	theme: {
 		extend: {
 			colors: {
@@ -17,12 +17,6 @@ export default {
 				'brand': ['Quicksand', ...defaultTheme.fontFamily.sans],
 				'serif': ['Lora', ...defaultTheme.fontFamily.serif],
 				'testimony': ['Playfair Display', ...defaultTheme.fontFamily.serif],
-			},
-			screens: {
-				// TODO: Switch to em
-				sm: { min: '680px' },
-				md: { min: '1920px' },
-				lg: { min: '2048px' }
 			}
 		},
 	},
