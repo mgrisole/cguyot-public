@@ -1,0 +1,68 @@
+---
+import List from "../components/list.astro";
+import { Modal } from "../components";
+---
+
+<div class="flex gap-12">
+  <Modal id="privacy">
+    <Fragment slot="title">Charte éthique & Confidentialité</Fragment>
+    <List
+      slot="content"
+      darkFont={true}
+      items={[
+        "Le praticien respecte le secret professionnel",
+        "Avant de commencer la séance, le praticien fournira à votre demande tout renseignement utile sur le cadre de sa pratique ainsi que sur sa déontologie en des termes clairs, précis et appropriés",
+        "Une séance d’hypnose ericksonienne (Coaching inclus) consiste en des actes d’accompagnemen propres à aider les personnes face à certains comportements ou problématiques",
+        "Une séance d’Hypnose Ericksonienne et plus largement tout outil de thérapie brève ne se substitue en aucun cas à un avis et suivi médical.",
+        "Le client doit impérativement poursuivre ses traitements et consultations médicales. Le praticien n’établira au cours de ses séances ni diagnostic médical ni  prescription. Tout procédé de guérison ou traitement curatif relève du seul exercice médical, réservé aux personnes titulaires d’un titre ou diplôme défini par les termes de la loi en vigueur. Le cas échéant, le client est invité à s'adresser à un médecin ou toute autorité habilitée, si sa demande excède les champs de compétence précité.",
+        "Le Client s’engage à mettre en place les actions et exercices proposés pour avancer dans cette démarche personnelle, avant et entre les séances.",
+        "Aucun praticien ne se prétend comme détenteur d’une vérité absolue. Le client est acteur de son changement. Le praticien s’engage à hauteur de la motivation du client qui est responsable de la moitié du travail effectué. Motivation et  dynamique de mieux être sont des ingrédients essentiels à l'atteinte de l'objectif.",
+        "Le praticien se laisse la possibilité d’interrompre la séance, si le client ne suit pas la démarche indiquée.",
+        "Toute séance non annulée 48h à l’avance est considérée comme dûe. Même si vous avez atteint ce que vous vouliez dès la première séance, vous êtes tenus d’en avertir le praticien.",
+        "Le praticien n’a pas d’obligation de résultat, cependant, il est tenu à une obligation de moyens et s'engage à  utiliser les techniques les plus adaptées à votre demande.",
+      ]}
+    />
+  </Modal>
+
+  <Modal id="legal">
+    <Fragment slot="title">Mentions légales</Fragment>
+    <div slot="content" class={"flex flex-col gap-5"}>
+      <div>
+        <div class={"text-2xl mb-3"}>Objet</div>
+        <div>
+          Le présent site Internet est la propriété de : Caroline Guyot
+          (entrepreneur individuel) 37 avenue Victor Hugo 13100 Aix en Provence N°
+          SIRET : 81302911300020 il a pour objet de fournir des informations sur
+          les activités de Caroline Guyot, praticienne en hypnose et coach
+        </div>
+      </div>
+
+      <div>
+        <div class={"text-2xl mb-3"}>Propriété intellectuelle</div>
+        <div>
+          L’internaute dispose d’un droit d’accès, de modification, de
+          rectification et de suppression des données le concernant (art. 34 de la
+          loi » Informatique et Libertés » du 6 janvier 1978). Pour exercer ce
+          droit, il s’adressera par courrier à : Caroline Guyot Toute reproduction
+          totale ou partielle de ce site, des logos, des marques ou de tout
+          élément figurant sur ce site est interdite sans autorisation écrite
+          préalable. De même, tout droit de traduction, d’adaptation et de
+          reproduction partielle ou totale est interdite sans le consentement de
+          Caroline Guyot.
+        </div>
+      </div>
+
+      <div>
+        <div class={"text-2xl mb-3"}>Conception et hébergement</div>
+        <div>
+          <div>
+            La Charte graphique et interface graphique ont été réalisés par
+            Maxime Grisole
+          </div>
+          <div>Ce site a été conçu et réalisé par Maxime Grisole</div>
+          <div>L’hébergement est assuré par Github Pages</div>
+        </div>
+      </div>
+    </div>
+  </Modal>
+</div>
