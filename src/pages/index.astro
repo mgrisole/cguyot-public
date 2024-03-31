@@ -15,30 +15,30 @@ import Location from "../sections/location.astro";
 ---
 
 <Layout title="Caroline Guyot - Coaching & Hypnose">
-    <div class="flex flex-col gap-32 md:gap-40">
-        <Bio />
-        <Change />
-        <Process />
-        <Hypnosis />
-        <WeightManagement />
-        <ProfessionalPerformance />
-        <TabaccoFree />
-        <Schooling />
-        <Testimonies />
-        <Skills />
-        <Services />
-        <Location />
-    </div>
+  <div class="flex flex-col w-full">
+    <Bio />
+    <Change />
+    <Process />
+    <Hypnosis />
+    <WeightManagement />
+    <ProfessionalPerformance />
+    <TabaccoFree />
+    <Schooling />
+    <Testimonies />
+    <Skills />
+    <Services />
+    <Location />
+  </div>
 </Layout>
 
 <style is:global>
-    html {
-        scroll-behavior: smooth;
-    }
+  html {
+    scroll-behavior: smooth;
+  }
 
-    @media (prefers-reduced-motion: reduce) {
-        :global(html) {
-            scroll-behavior: auto;
-        }
+  @media (prefers-reduced-motion: reduce) {
+    :global(html) {
+      scroll-behavior: auto;
     }
+  }
 </style>

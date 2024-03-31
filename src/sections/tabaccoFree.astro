@@ -1,36 +1,48 @@
 ---
-import Chapter from "../components/chapter.astro";
-import List from "../components/list.astro";
-import cigarette from '../assets/photo/square/cigarette.jpeg'
+import cigarette from "../assets/photo/square/cigarette.jpeg";
+import { CenteredBlock, Chapter, List } from "@components";
 ---
 
-<Chapter
-  img={{url: cigarette, alt: 'Une cigarette dressée à la verticale entièrement consummée, dégageant une légère fumée et dont les cendres tiennent encore en place.'}}
-  darkColor={true}
->
-  <Fragment slot="title">Cap sur une vie sans tabac</Fragment>
+<CenteredBlock>
+  <Chapter
+    img={{
+      url: cigarette,
+      alt: "Une cigarette dressée à la verticale entièrement consummée, dégageant une légère fumée et dont les cendres tiennent encore en place.",
+    }}
+  >
+    <Fragment slot="title">Cap sur une vie sans tabac</Fragment>
     <div class={"flex flex-col gap-5"}>
-      <div>Se reprogrammer pour retrouver son indifférence naturelle vis à vis de la cigarette.</div>
+      <div>
+        Se reprogrammer pour retrouver son indifférence naturelle vis à vis de
+        la cigarette.
+      </div>
       <div>
         <div class={"italic mb-3"}>C’est décidé: demain j’arrête !</div>
         <List
-                darkFont={true}
-                items={[
-                  "Vous voulez arrêter de fumer, et vous avez tout essayé, en vain ?",
-                  "Vous avez entendu parler des conséquences du sevrage et vous craignez de devoir en souffrir (irritabilité, stress, fringales, … ) ?",
-                  "Vous pensez ne pas pouvoir vivre au quotidien sans certaines cigarettes « rituelles » (avec le café, après les repas, pendant les pauses au travail…) ?"
-                ]}/>
+          items={[
+            "Vous voulez arrêter de fumer, et vous avez tout essayé, en vain ?",
+            "Vous avez entendu parler des conséquences du sevrage et vous craignez de devoir en souffrir (irritabilité, stress, fringales, … ) ?",
+            "Vous pensez ne pas pouvoir vivre au quotidien sans certaines cigarettes « rituelles » (avec le café, après les repas, pendant les pauses au travail…) ?",
+          ]}
+        />
       </div>
 
       <div>
         <div class={"italic mb-3"}>C’est plus fort que moi…</div>
         <div class={"flex flex-col gap-3"}>
           <div>
-            Vous avez beau savoir au fond de vous que vous avez beaucoup à y gagner, il y a comme une petite voix intérieure qui questionne: est-ce que je vais arriver à gérer le manque? Mon stress ?  Vais-je prendre du poids ? Comment gérer les soirées entre amis sans cigarette ?…
-            L’hypnose est une aide qui a déjà fait ses preuves auprès de millions de personnes dans le monde.
+            Vous avez beau savoir au fond de vous que vous avez beaucoup à y
+            gagner, il y a comme une petite voix intérieure qui questionne:
+            est-ce que je vais arriver à gérer le manque? Mon stress ? Vais-je
+            prendre du poids ? Comment gérer les soirées entre amis sans
+            cigarette ?… L’hypnose est une aide qui a déjà fait ses preuves
+            auprès de millions de personnes dans le monde.
           </div>
-          <div>Découvrez en quoi consiste l’accompagnement que je vous propose.</div>
+          <div>
+            Découvrez en quoi consiste l’accompagnement que je vous propose.
+          </div>
         </div>
       </div>
     </div>
-</Chapter>
+  </Chapter>
+</CenteredBlock>

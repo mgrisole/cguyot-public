@@ -1,5 +1,5 @@
 ---
-import {Slider as SolidSlider} from "./slider"
+import { Slider as SolidSlider } from "./slider";
 ---
 
 <div>
@@ -9,8 +9,8 @@ import {Slider as SolidSlider} from "./slider"
 </div>
 
 <script>
-  import BlazeSlider from 'blaze-slider'
-  import 'blaze-slider/dist/blaze.css'
+  import BlazeSlider from "blaze-slider";
+  import "blaze-slider/dist/blaze.css";
 
   const slider = document.querySelector(".blaze-slider") as HTMLElement;
   new BlazeSlider(slider, {
@@ -19,9 +19,7 @@ import {Slider as SolidSlider} from "./slider"
       slidesToShow: 1,
       enableAutoplay: true,
       autoplayInterval: 8000,
-      transitionDuration: 1000
-    }
+      transitionDuration: 1000,
+    },
   });
 </script>
-
-

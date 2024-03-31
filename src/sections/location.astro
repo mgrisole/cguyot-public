@@ -1,20 +1,28 @@
 ---
-import {BiRegularBadge, BiRegularMap} from 'solid-icons/bi'
-import Chapter from '../components/chapter.astro';
+import { BiRegularBadge, BiRegularMap } from "solid-icons/bi";
+import { CenteredBlock, Chapter } from "@components";
 ---
 
-<Chapter darkColor={true}>
-  <div slot="title" class="flex gap-4"><BiRegularMap class={"text-3xl"}/>Le cabinet</div>
-  <div class={"flex flex-col gap-5 mt-5"}>
-
-    <div class={"flex flex-col gap-2"}>
-      <div>37 avenue Victor Hugo</div>
-      <div>13100 Aix en Provence</div>
-      <div>A proximité immédiate des parking : Mignet ou de la Gare</div>
-      <div>0687702591</div>
-      <div>Hypnose13100@gmail.com</div>
+<CenteredBlock>
+  <Chapter>
+    <div slot="title" class="flex gap-4">
+      <BiRegularMap class={"text-3xl"} />Le cabinet
     </div>
+    <div class={"flex flex-col gap-5 mt-5"}>
+      <div class={"flex flex-col gap-2"}>
+        <div>37 avenue Victor Hugo</div>
+        <div>13100 Aix en Provence</div>
+        <div>A proximité immédiate des parking : Mignet ou de la Gare</div>
+        <div>0687702591</div>
+        <div>Hypnose13100@gmail.com</div>
+      </div>
 
-    <iframe src="https://www.google.com/maps/embed/v1/search?q=37%20Avenue%20Victor%20Hugo%2C%20Aix-en-Provence%2C%20France&amp;key=AIzaSyBX4WEtF1RV5qL2dFVCDsjYXmgpJIPIKnk&amp;zoom=16" style="display:block" loading="lazy" width="100%" height="250"></iframe>
-  </div>
-</Chapter>
+      <iframe
+        src="https://www.google.com/maps/embed/v1/search?q=37%20Avenue%20Victor%20Hugo%2C%20Aix-en-Provence%2C%20France&key=AIzaSyBX4WEtF1RV5qL2dFVCDsjYXmgpJIPIKnk&zoom=16"
+        style="display:block"
+        loading="lazy"
+        width="100%"
+        height="250"></iframe>
+    </div>
+  </Chapter>
+</CenteredBlock>

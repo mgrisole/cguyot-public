@@ -1,31 +1,36 @@
 ---
-import Chapter from "../components/chapter.astro";
-import List from "../components/list.astro";
 import compass from "../assets/photo/square/compass.jpeg";
+import { CenteredBlock, Chapter, List } from "@components";
 ---
 
-<Chapter
-  img={{url: compass, alt: 'Une main tenant une boussole avec une route qui s\'étend au loin.'}}
-  darkColor={true}
->
-  <Fragment slot="title">Cap sur votre changement</Fragment>
-  <div class={"mb-6"}>Vous avez sans doute tenté sans succès de:</div>
-  <div class={"max-h-96 overflow-y-auto rtl"}>
-    <div class={"ltr"}>
-      <List darkFont={true} items={[
-        "Mincir et surtout garder les bénéfices de votre perte de poids dans la durée (en finir enfin avec l’effet « yoyo »)",
-        "Réguler vos faims « émotionnelles », vos fringales, en rentrant du travail ou le soir quand vous êtes seul(e)",
-        "Arrêter de fumer sans rechute, sans souffrances et retrouver une indifférence durable vis à vis de la cigarette",
-        "Lâcher prise et sortir de l’anxiété, mettre ses inquiétudes à distance, relativiser davantage, se défaire de ses TOCS",
-        "Vous débarrasser de vos phobies, peurs irraisonnées, trac intense, par exemple lors de prise de parole en public dans le cadre professionnel",
-        "Mieux vivre après un traumatisme/accident/un choc physique ou affectif",
-        "Trouver de l’apaisement dans le cadre d’un deuil, d’une étape de vie (retraite/changement de région ..) , d’un projet personnel (PMA, grossesse) ou professionnel (reconversion, retour au travail après un burnout)",
-        "Se libérer de certaines croyances limitantes (cette petite voix qui vous dit (je ne suis pas à la hauteur, je ne suis pas capable..), de la peur du jugement, du regard de l’autre, de l’auto critique, des sentiments de rejet, d’abandon, d’injustice, d’humiliation, de trahison ou de culpabilité",
-        "Renforcer l’estime de soi et la confiance en soi pour pouvoir oser et apprendre à dire non",
-        "Apaiser le ressenti d’une douleur chronique qui vous empêche de vivre sereinement",
-        "Retrouver une meilleure qualité de sommeil (agir sur l’endormissement difficile et/ou les réveils nocturnes)",
-        "Retrouver le goût et l’odorat suite à un épisode Covid"
-      ]} />
+<CenteredBlock class="bg-baby-powder">
+  <Chapter
+    img={{
+      url: compass,
+      alt: "Une main tenant une boussole avec une route qui s'étend au loin.",
+    }}
+  >
+    <Fragment slot="title">Cap sur votre changement</Fragment>
+    <div class={"mb-6"}>Vous avez sans doute tenté sans succès de:</div>
+    <div class={"max-h-96 overflow-y-auto rtl"}>
+      <div class={"ltr"}>
+        <List
+          items={[
+            "Mincir et surtout garder les bénéfices de votre perte de poids dans la durée (en finir enfin avec l’effet « yoyo »)",
+            "Réguler vos faims « émotionnelles », vos fringales, en rentrant du travail ou le soir quand vous êtes seul(e)",
+            "Arrêter de fumer sans rechute, sans souffrances et retrouver une indifférence durable vis à vis de la cigarette",
+            "Lâcher prise et sortir de l’anxiété, mettre ses inquiétudes à distance, relativiser davantage, se défaire de ses TOCS",
+            "Vous débarrasser de vos phobies, peurs irraisonnées, trac intense, par exemple lors de prise de parole en public dans le cadre professionnel",
+            "Mieux vivre après un traumatisme/accident/un choc physique ou affectif",
+            "Trouver de l’apaisement dans le cadre d’un deuil, d’une étape de vie (retraite/changement de région ..) , d’un projet personnel (PMA, grossesse) ou professionnel (reconversion, retour au travail après un burnout)",
+            "Se libérer de certaines croyances limitantes (cette petite voix qui vous dit (je ne suis pas à la hauteur, je ne suis pas capable..), de la peur du jugement, du regard de l’autre, de l’auto critique, des sentiments de rejet, d’abandon, d’injustice, d’humiliation, de trahison ou de culpabilité",
+            "Renforcer l’estime de soi et la confiance en soi pour pouvoir oser et apprendre à dire non",
+            "Apaiser le ressenti d’une douleur chronique qui vous empêche de vivre sereinement",
+            "Retrouver une meilleure qualité de sommeil (agir sur l’endormissement difficile et/ou les réveils nocturnes)",
+            "Retrouver le goût et l’odorat suite à un épisode Covid",
+          ]}
+        />
+      </div>
     </div>
-  </div>
-</Chapter>
+  </Chapter>
+</CenteredBlock>

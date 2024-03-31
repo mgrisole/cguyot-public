@@ -1,42 +1,66 @@
 ---
-import Chapter from "../components/chapter.astro";
-import List from "../components/list.astro";
-import soccer from '../assets/photo/square/soccer.jpeg'
-import {MoreInfo} from "../components";
+import soccer from "../assets/photo/square/soccer.jpeg";
+import { CenteredBlock, Chapter, List, MoreInfo } from "@components";
 ---
 
-<Chapter
-  img={{url: soccer, alt: 'Un joueur de football concentré exécutant un coup de pied puissant sur un terrain verdoyant sous un ciel spectaculaire.'}}
-  darkColor={true}
-  reverse={true}
->
-  <Fragment slot="title">Cap sur la performance professionnelle</Fragment>
-  <div class={"flex flex-col gap-3"}>
-    <div class={"italic"}>Coaching en préparation mentale: « Optimisation des performances »</div>
-    <div>Ce coaching s’adresse à toute personne évoluant dans le milieu du sport, du spectacle, de l’entreprise ou des études supérieures souhaitant se dépasser et atteindre son potentiel optimal lors d’échéances à fort enjeu (examens, concours, compétitions, tournois, représentations, performances…)</div>
-  </div>
-
-  <MoreInfo client:visible>
-    <div class={'flex flex-col gap-3'}>
-      <div>
-        Beaucoup d’ingrédients sont nécessaires pour accéder à la performance et donner le meilleur de soi en toutes circonstances:
-        une bonne gestion des émotions, une capacité à se concentrer, à gérer son environnement (la pression, le public), à dépasser ses échecs passés.
+<CenteredBlock>
+  <Chapter
+    img={{
+      url: soccer,
+      alt: "Un joueur de football concentré exécutant un coup de pied puissant sur un terrain verdoyant sous un ciel spectaculaire.",
+    }}
+    reverse={true}
+  >
+    <Fragment slot="title">Cap sur la performance professionnelle</Fragment>
+    <div class={"flex flex-col gap-3"}>
+      <div class={"italic"}>
+        Coaching en préparation mentale: « Optimisation des performances »
       </div>
       <div>
-        <div class={'mb-3'}>Mon objectif sera de vous aider à comprendre:</div>
-        <List darkFont={true} items={[
-          'Quels secrets ont en commun les champions et vous approprier leurs capacités à gérer leurs émotions, leur environnement, leurs réactions',
-          'Sur quelles ressources s’appuient-ils pour gérer doutes, pression, échecs,  regard des autres.',
-          'Quelles qualités ont-ils développé pour optimiser leur capital énergie, motivation, concentration',
-        ]}/>
-      </div>
-      <div>
-        <div>En quelques mots simples:</div>
-        <div>
-          <div>Comment ces champions peuvent nous inspirer afin que nous puissions compter sur notre capital confiance et estime de soi et donner le meilleur de nous-même à chaque fois que c’est nécessaire ?</div>
-          <div>Comment peuvent-ils être une source d’inspiration pour atteindre vos objectifs et vous permettre de devenir votre propre champion ?</div>
-        </div>
+        Ce coaching s’adresse à toute personne évoluant dans le milieu du sport,
+        du spectacle, de l’entreprise ou des études supérieures souhaitant se
+        dépasser et atteindre son potentiel optimal lors d’échéances à fort
+        enjeu (examens, concours, compétitions, tournois, représentations,
+        performances…)
       </div>
     </div>
-  </MoreInfo>
-</Chapter>
+
+    <MoreInfo client:visible>
+      <div class={"flex flex-col gap-3"}>
+        <div>
+          Beaucoup d’ingrédients sont nécessaires pour accéder à la performance
+          et donner le meilleur de soi en toutes circonstances: une bonne
+          gestion des émotions, une capacité à se concentrer, à gérer son
+          environnement (la pression, le public), à dépasser ses échecs passés.
+        </div>
+        <div>
+          <div class={"mb-3"}>
+            Mon objectif sera de vous aider à comprendre:
+          </div>
+          <List
+            items={[
+              "Quels secrets ont en commun les champions et vous approprier leurs capacités à gérer leurs émotions, leur environnement, leurs réactions",
+              "Sur quelles ressources s’appuient-ils pour gérer doutes, pression, échecs,  regard des autres.",
+              "Quelles qualités ont-ils développé pour optimiser leur capital énergie, motivation, concentration",
+            ]}
+          />
+        </div>
+        <div>
+          <div>En quelques mots simples:</div>
+          <div>
+            <div>
+              Comment ces champions peuvent nous inspirer afin que nous
+              puissions compter sur notre capital confiance et estime de soi et
+              donner le meilleur de nous-même à chaque fois que c’est nécessaire
+              ?
+            </div>
+            <div>
+              Comment peuvent-ils être une source d’inspiration pour atteindre
+              vos objectifs et vous permettre de devenir votre propre champion ?
+            </div>
+          </div>
+        </div>
+      </div>
+    </MoreInfo>
+  </Chapter>
+</CenteredBlock>

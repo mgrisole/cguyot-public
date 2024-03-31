@@ -1,15 +1,18 @@
 ---
-import Chapter from '../components/chapter.astro';
-import {BiRegularBadge} from "solid-icons/bi"
+import { BiRegularBadge } from "solid-icons/bi";
+import { CenteredBlock, Chapter } from "@components";
 ---
 
-<Chapter darkColor={true}>
-  <div id="services" slot="title" class="flex gap-4"><BiRegularBadge class={"text-3xl"}/>Services & Tarifs</div>
+<CenteredBlock>
+  <Chapter>
+    <div id="services" slot="title" class="flex gap-4">
+      <BiRegularBadge class={"text-3xl"} />Services & Tarifs
+    </div>
     <div class={"flex flex-col gap-5 mt-5"}>
       <div class={"flex gap-32"}>
         <div>Séance individuelle (1h)</div>
         <div class={"flex justify-end"}>60&nbsp;€</div>
       </div>
     </div>
-</Chapter>
-
+  </Chapter>
+</CenteredBlock>

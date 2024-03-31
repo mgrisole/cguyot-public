@@ -1,12 +1,12 @@
 ---
-import '@fontsource/quicksand';
-import '@fontsource/lora/400-italic.css';
-import '@fontsource/playfair-display/400-italic.css';
+import "@fontsource/quicksand";
+import "@fontsource/lora/400-italic.css";
+import "@fontsource/playfair-display/400-italic.css";
 import Header from "./header.astro";
 import Footer from "./footer.astro";
 
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
@@ -14,19 +14,22 @@ const { title } = Astro.props;
 
 <!doctype html>
 <html lang="fr" data-theme="light">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Caroline Guyot, coach et praticienne certifiée en hypnose ericksonienne, vous accueille sur son site. Découvrez mes services d'accompagnement, de l'arrêt du tabac à la gestion de l'anxiété et du stress, en passant par l'amélioration du sommeil. Expertise en gestion du poids, troubles alimentaires et optimisation des performances professionnelles." />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/cguyot-public/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body class="font-brand text-independence flex w-full justify-center items-center px-16 py-12">
-		<div class="flex flex-col gap-16 md:gap-32 max-w-6xl">
-			<Header />
-			<slot />
-			<Footer />
-		</div>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Caroline Guyot, coach et praticienne certifiée en hypnose ericksonienne, vous accueille sur son site. Découvrez mes services d'accompagnement, de l'arrêt du tabac à la gestion de l'anxiété et du stress, en passant par l'amélioration du sommeil. Expertise en gestion du poids, troubles alimentaires et optimisation des performances professionnelles."
+    />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/cguyot-public/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="font-brand text-independence py-12">
+    <div class="flex flex-col gap-16 w-full items-center">
+      <Header />
+      <slot />
+      <Footer />
+    </div>
+  </body>
 </html>

@@ -1,45 +1,59 @@
 ---
 import { BiRegularBookOpen } from "solid-icons/bi";
-import {Chapter, Slider} from "../components";
+import { Chapter, Slider, CenteredBlock } from "@components";
 ---
 
-
-<Chapter darkColor={true}>
-  <Fragment slot="title" >
-    <div class="flex gap-4 items-center">
-      <BiRegularBookOpen class="text-3xl"/><span>Retours d’expérience</span>
-    </div>
-  </Fragment>
-  <Slider>
-    <div slot="slide" class="flex justify-center flex-col gap-5">
+<CenteredBlock class="bg-baby-powder">
+  <Chapter>
+    <Fragment slot="title">
+      <div class="flex gap-4 items-center">
+        <BiRegularBookOpen class="text-3xl" /><span>Retours d’expérience</span>
+      </div>
+    </Fragment>
+    <Slider>
+      <div slot="slide" class="flex justify-center flex-col gap-5">
         <div class={"text-xl"}>Arnaud C</div>
         <div class={"h-72 overflow-y-auto px-3 font-testimony"}>
           Tout simplement merci à Caroline.
-          <br> Merci d’avoir changé ma vie avec une telle facilité.
-          <br> Ayant essayer tous les régimes existants pour perdre du poids j’ai sauté le pas et tenté l’anneau gastrique par hypnose.
-          <br> Une méthode indolore.
-          <br> Aujourd’hui l’alimentation n’est plus un supplice j’ai perdu plus de 15 kg en même pas 3 mois sans aucune frustration
-          <br> Une écoute et un accueil incroyable
-          <br> Une séance d hypnose qui vous apprends énormément sur vous et votre corps
-          <br> Un moment de détente incroyable
-          <br> Si il y avait 10 étoiles je les aurais mise sans aucune hésitation
-          <br> Merci encore pour tout
+          <br /> Merci d’avoir changé ma vie avec une telle facilité.
+          <br /> Ayant essayer tous les régimes existants pour perdre du poids j’ai
+          sauté le pas et tenté l’anneau gastrique par hypnose.
+          <br /> Une méthode indolore.
+          <br /> Aujourd’hui l’alimentation n’est plus un supplice j’ai perdu plus
+          de 15 kg en même pas 3 mois sans aucune frustration
+          <br /> Une écoute et un accueil incroyable
+          <br /> Une séance d hypnose qui vous apprends énormément sur vous et votre
+          corps
+          <br /> Un moment de détente incroyable
+          <br /> Si il y avait 10 étoiles je les aurais mise sans aucune hésitation
+          <br /> Merci encore pour tout
         </div>
-    </div>
-    <div slot="slide" class="flex justify-center flex-col gap-5">
-      <div class={"text-xl"}>Magali S</div>
-      <div class={"h-72 overflow-y-auto px-3 font-testimony"}>
-        En surpoids depuis longtemps j’ai eu envie de tester une méthode douce afin de perdre du poids
-        <br> Plus très envie de régimes contraignants et frustrants ni que l’on m’explique ce que je dois ou ne dois pas manger : à 50 ans j’ai bien fait le tour de la question 😁
-        <br> Je suis allée vers l’hypnose en me disant que je n’avais pas grand chose à perdre à essayer ...
-        <br> Et j’ai perdu ... 20 kgs en 9 mois ...
-        <br> Caroline Guyot est une thérapeute au top et l’hypnose est une méthode non agressive et très relaxante pour apprendre à réapprivoiser son corps et son esprit
-        <br> C’est une méthode peu connue mais excellente
-        <br> Et surtout à aucun moment je ne me suis sentie dépossédée de mon jugement ou de ma volonté propre ou sous une quelconque emprise
-        <br> Je suis ravie de cette expérience et au bout de 9 mois je suis toujours en accord avec mon corps
-        <br> Pas de stress pas frustration pas de contrainte : cela paraît fou mais c’est réel
-        <br> Allez y vous ne serez pas déçus et surtout il n’y a rien à perdre et tout à y gagner
       </div>
-    </div>
-  </Slider>
-</Chapter>
+      <div slot="slide" class="flex justify-center flex-col gap-5">
+        <div class={"text-xl"}>Magali S</div>
+        <div class={"h-72 overflow-y-auto px-3 font-testimony"}>
+          En surpoids depuis longtemps j’ai eu envie de tester une méthode douce
+          afin de perdre du poids
+          <br /> Plus très envie de régimes contraignants et frustrants ni que l’on
+          m’explique ce que je dois ou ne dois pas manger : à 50 ans j’ai bien fait
+          le tour de la question 😁
+          <br /> Je suis allée vers l’hypnose en me disant que je n’avais pas grand
+          chose à perdre à essayer ...
+          <br /> Et j’ai perdu ... 20 kgs en 9 mois ...
+          <br /> Caroline Guyot est une thérapeute au top et l’hypnose est une méthode
+          non agressive et très relaxante pour apprendre à réapprivoiser son corps
+          et son esprit
+          <br /> C’est une méthode peu connue mais excellente
+          <br /> Et surtout à aucun moment je ne me suis sentie dépossédée de mon
+          jugement ou de ma volonté propre ou sous une quelconque emprise
+          <br /> Je suis ravie de cette expérience et au bout de 9 mois je suis toujours
+          en accord avec mon corps
+          <br /> Pas de stress pas frustration pas de contrainte : cela paraît fou
+          mais c’est réel
+          <br /> Allez y vous ne serez pas déçus et surtout il n’y a rien à perdre
+          et tout à y gagner
+        </div>
+      </div>
+    </Slider>
+  </Chapter>
+</CenteredBlock>

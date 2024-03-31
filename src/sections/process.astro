@@ -1,26 +1,36 @@
 ---
-import Chapter from "../components/chapter.astro";
-import List from "../components/list.astro";
 import caroline from "../assets/photo/square/caroline.jpeg";
+import { CenteredBlock, Chapter, List } from "@components";
 ---
 
-
-<Chapter
-  img={{url: caroline, alt: 'Black and white photograph picturing Caroline Guyot.'}}
-  darkColor={true}
-  reverse={true}
->
-  <Fragment slot="title">Déroulement d'un accompagnement</Fragment>
+<CenteredBlock>
+  <Chapter
+    img={{
+      url: caroline,
+      alt: "Black and white photograph picturing Caroline Guyot.",
+    }}
+    reverse={true}
+  >
+    <Fragment slot="title">Déroulement d'un accompagnement</Fragment>
     <div class={"flex flex-col gap-3"}>
       <div>
-        Nous allons d’abord déterminer ensemble vos besoins, poser un objectif qui correspond à ce changement souhaité et choisir les outils les plus adaptés pour y parvenir.
-        Puis nous explorerons, à votre rythme, les freins et blocages qui vous empêchaient jusqu’alors d’atteindre votre objectif (croyances limitantes, mécaniques inconscientes, émotions confinées…) pour ainsi vous permettre d’enclencher votre changement grâce à toutes les ressources qui sont en vous et dont vous êtes dorénavant plus conscient(e).
+        Nous allons d’abord déterminer ensemble vos besoins, poser un objectif
+        qui correspond à ce changement souhaité et choisir les outils les plus
+        adaptés pour y parvenir. Puis nous explorerons, à votre rythme, les
+        freins et blocages qui vous empêchaient jusqu’alors d’atteindre votre
+        objectif (croyances limitantes, mécaniques inconscientes, émotions
+        confinées…) pour ainsi vous permettre d’enclencher votre changement
+        grâce à toutes les ressources qui sont en vous et dont vous êtes
+        dorénavant plus conscient(e).
       </div>
       <div>Je mets à votre service:</div>
-      <List darkFont={true} items={[
-        "Une écoute inconditionnelle hors de tout jugement dans un espace de confiance et de confidentialité",
-        "Des outils puissants de changement pour renforcer votre capital confiance en soi. Une bonne connaissance du changement et ses implications liée à mon vécu personnel (d’ancienne fumeuse persuadée que je ne pouvais vivre normalement sans la cigarette, d’ancienne cadre en entreprise sous pression et terrorisée par la prise de parole en public, d’ancienne voyageuse phobique de l’avion…)",
-        "Une riche expérience d’accompagnement de plusieurs centaines de personnes depuis mon installation en 2015, ainsi que de très nombreuses formations aux outils proposés, gage de sérieux et de sécurité pour ma pratique"
-      ]}/>
+      <List
+        items={[
+          "Une écoute inconditionnelle hors de tout jugement dans un espace de confiance et de confidentialité",
+          "Des outils puissants de changement pour renforcer votre capital confiance en soi. Une bonne connaissance du changement et ses implications liée à mon vécu personnel (d’ancienne fumeuse persuadée que je ne pouvais vivre normalement sans la cigarette, d’ancienne cadre en entreprise sous pression et terrorisée par la prise de parole en public, d’ancienne voyageuse phobique de l’avion…)",
+          "Une riche expérience d’accompagnement de plusieurs centaines de personnes depuis mon installation en 2015, ainsi que de très nombreuses formations aux outils proposés, gage de sérieux et de sécurité pour ma pratique",
+        ]}
+      />
     </div>
-</Chapter>
+  </Chapter>
+</CenteredBlock>

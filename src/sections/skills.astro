@@ -1,51 +1,67 @@
 ---
-import Chapter from '../components/chapter.astro';
-import List from '../components/list.astro';
-import laptop from '../assets/photo/square/laptop.jpeg'
+import laptop from "../assets/photo/square/laptop.jpeg";
+import { CenteredBlock, Chapter, List } from "@components";
 ---
 
-<Chapter
-  img={{url: laptop, alt: "Un ordinateur portable moderne affichant un document de synthèse, accompagné d'un smartphone, d'un verre d'eau et de papier à lettres, soigneusement disposés sur une surface en bois."}}
-  darkColor={true}
-  reverse={true}
->
-  <Fragment slot="title">Un riche parcours de formations au service de la qualité de mes accompagnements</Fragment>
-  <div class={"flex flex-col gap-6"}>
-    <div>
-      <div class={'mb-3 text-xl'}>Certifications:</div>
-      <List darkFont={true} items={[
-        "Certificat de Praticienne en Hypnose Ericksonienne (Psynapse)",
-        "Certificat de Coach Professionnel et Personnel (MHD) RNCP 6 (licence)",
-        "Certificat de praticienne en hypnosport et performance (ARCHE)",
-        "Certificat de Coach Mental (Méthode se ACCEDER)",
-        "Certificat PNL (Mosaïque)",
-        "Certificat de praticienne experte en sevrage tabagique (Michel Martin)",
-        "Certificat réflexologie plantaire (ANMEI)"
-      ]}
-      />
-    </div>
-    <div>
-      <div class={'mb-3 text-xl'}>Perfectionnements:</div>
-      <List darkFont={true} items={[
-        'Hypnose rapide et leviers de changement (CHN)',
-        'Hypnose enfants (Psynapse)',
-        'Hypno analgésie (Psynapse)',
-        'Hypnose et perte de poids par l’anneau gastrique hypnotique (Psynapse)',
-        'Hypnose et phobies (AFNH)',
-        'Hypnose et troubles du comportement alimentaire (AFNH)',
-        'EFT niveau 1 (IES)',
-        'Reiki niveau 2 (M. Laurent)'
-      ]} />
-    </div>
+<CenteredBlock>
+  <Chapter
+    img={{
+      url: laptop,
+      alt: "Un ordinateur portable moderne affichant un document de synthèse, accompagné d'un smartphone, d'un verre d'eau et de papier à lettres, soigneusement disposés sur une surface en bois.",
+    }}
+    reverse={true}
+  >
+    <Fragment slot="title"
+      >Un riche parcours de formations au service de la qualité de mes
+      accompagnements</Fragment
+    >
+    <div class={"flex flex-col gap-6"}>
+      <div>
+        <div class={"mb-3 text-xl"}>Certifications:</div>
+        <List
+          items={[
+            "Certificat de Praticienne en Hypnose Ericksonienne (Psynapse)",
+            "Certificat de Coach Professionnel et Personnel (MHD) RNCP 6 (licence)",
+            "Certificat de praticienne en hypnosport et performance (ARCHE)",
+            "Certificat de Coach Mental (Méthode se ACCEDER)",
+            "Certificat PNL (Mosaïque)",
+            "Certificat de praticienne experte en sevrage tabagique (Michel Martin)",
+            "Certificat réflexologie plantaire (ANMEI)",
+          ]}
+        />
+      </div>
+      <div>
+        <div class={"mb-3 text-xl"}>Perfectionnements:</div>
+        <List
+          items={[
+            "Hypnose rapide et leviers de changement (CHN)",
+            "Hypnose enfants (Psynapse)",
+            "Hypno analgésie (Psynapse)",
+            "Hypnose et perte de poids par l’anneau gastrique hypnotique (Psynapse)",
+            "Hypnose et phobies (AFNH)",
+            "Hypnose et troubles du comportement alimentaire (AFNH)",
+            "EFT niveau 1 (IES)",
+            "Reiki niveau 2 (M. Laurent)",
+          ]}
+        />
+      </div>
 
-    <div class={'border border-independence rounded-xl p-5'}>
-      <List darkFont={true} items={[
-        'Titulaire du BAFA',
-        'Accompagnements possibles en anglais (bilingue)',
-        'Membre du SDMH (Syndicat Des Métiers de L\'Hypnose)'
-      ]}
-      />
-      <div class={'mt-3'}>Mes accompagnements sont recommandés par de nombreux professionnels de santé (médecins, dentistes, kinés..) pour le sérieux et la qualité des contenus ainsi que le respect strict du suivi médical existant. Je ne pose aucun diagnostic ni n’interviens sur les traitements en cours ou recommandations du médecin qui  font inconditionnellement autorité.</div>
+      <div class={"border border-independence rounded-xl p-5"}>
+        <List
+          items={[
+            "Titulaire du BAFA",
+            "Accompagnements possibles en anglais (bilingue)",
+            "Membre du SDMH (Syndicat Des Métiers de L'Hypnose)",
+          ]}
+        />
+        <div class={"mt-3"}>
+          Mes accompagnements sont recommandés par de nombreux professionnels de
+          santé (médecins, dentistes, kinés..) pour le sérieux et la qualité des
+          contenus ainsi que le respect strict du suivi médical existant. Je ne
+          pose aucun diagnostic ni n’interviens sur les traitements en cours ou
+          recommandations du médecin qui font inconditionnellement autorité.
+        </div>
+      </div>
     </div>
-  </div>
-</Chapter>
+  </Chapter>
+</CenteredBlock>
