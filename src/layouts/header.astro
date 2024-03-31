@@ -1,9 +1,8 @@
 ---
-import {Image} from "astro:assets";
+import { Image } from "astro:assets";
 import logo from "../assets/logo.png";
 import { BiRegularBadge, BiRegularPhone } from "solid-icons/bi";
 ---
-
 
 <div class={"flex w-full text-independence"}>
   <div class="flex-1 title-1">
@@ -19,11 +18,17 @@ import { BiRegularBadge, BiRegularPhone } from "solid-icons/bi";
   </div>
   <div class="flex gap-6 items-center">
     <div class="flex gap-5 items-center">
-      <a href={`tel:+33687702591`} aria-label="Appel +33687702591" class={"flex items-center gap-3"}>
+      <a
+        href={`tel:+33687702591`}
+        aria-label="Appel +33687702591"
+        class={"flex items-center gap-3"}
+      >
         <div class={"hidden text-sm underline sm:flex"}>+33687702591</div>
         <BiRegularPhone class="text-3xl cursor-pointer" />
       </a>
-      <BiRegularBadge class="text-3xl cursor-pointer" />
+      <a href="#services" aria-label="Voir les tarifs"
+        ><BiRegularBadge class="text-3xl cursor-pointer" /></a
+      >
     </div>
   </div>
 </div>

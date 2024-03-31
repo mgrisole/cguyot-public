@@ -30,3 +30,15 @@ import Location from "../sections/location.astro";
         <Location />
     </div>
 </Layout>
+
+<style is:global>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        :global(html) {
+            scroll-behavior: auto;
+        }
+    }
+</style>
