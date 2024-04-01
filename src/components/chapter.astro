@@ -1,15 +1,15 @@
 ---
 import { Image } from "astro:assets";
 import type { ImageMetadata } from "astro";
-import { CenteredBlock } from "@components";
 
 interface Props {
   img?: { url: ImageMetadata; alt: string; loading?: "eager" | "lazy" };
   lightFont?: boolean;
   reverse?: boolean;
+  id?: string;
 }
 
-const { img, lightFont = false, reverse = false } = Astro.props;
+const { img, lightFont = false, reverse = false, id } = Astro.props;
 ---
 
 <div
@@ -24,6 +24,7 @@ const { img, lightFont = false, reverse = false } = Astro.props;
     ${reverse ? "md:flex-row-reverse" : "md:flex-row"}
     text-${lightFont ? "baby-powder" : "independence"}  
   `}
+  {id}
 >
   {
     img && (

@@ -2,7 +2,9 @@
 const { id } = Astro.props;
 ---
 
-<button onclick=`${id}.showModal()`><slot name="title" /></button>
+<button class="md:flex-grow-0 md:text-left" onclick=`${id}.showModal()`
+  ><slot name="title" /></button
+>
 
 <dialog {id} class="modal">
   <div class="modal-box">
