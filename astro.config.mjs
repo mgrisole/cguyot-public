@@ -6,7 +6,7 @@ import tunnel from "astro-tunnel";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://www.caroline-guyot.com/',
+  site: 'https://caroline-guyot.com',
   devToolbar: {
     enabled: true
   },
